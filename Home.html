@@ -4,67 +4,100 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Dessert">
-        <meta name="keywords" content="Dessert, food, cake">
-        <link rel="stylesheet" type="text/css" href="style/Style.css"/>
-        <link rel="icon" href="images/images.png" type="image/gif" sizes="16x16">
-        <title>irish Travel</title>
+        <meta name="description" content="Contact us, send a Query">
+        <meta name="keywords" content="contact, Query, email">
+        <style>
+            body{
+                font-family: sans-serif;
+                background-image: url(Images/Saint_Peters.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 10px;
+            }
 
-    </head>
-    
-    <style>
+            main{
+                margin: 15px 200px;
+                padding: 20px;
+                border: black solid 1px;
+                background: white;
+                min-height: 300px;
+            }
 
-  header{
-    background-image: url(Images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:200px;
-    color: white;
- 
-  }
+            header p{
+                font-style: italic;
+                text-align: center;
+                font-weight: 900;
+            }
 
-</style>
-                <header>
+            .required{
+                font-weight: bold;
+                color: red;
+            }
+            label{
+                float: left;
+                width: 112px;
+                padding-right: 10px;
+                text-align: right;
+            }
 
-                    <img style="float:left;margin-right:10px;" src="Images/Logo.png" alt="Logo" width="110">
-                    <h1 style="margin-top: 20px;color: black ;">Places to visit in Ireland</h1>
-    
-                </header>
-                <nav>
-                    <ul>
-                        <li id="active"> <a href="Home.html">Home</a></li>
-                        <li> <a href="">Connought</a></li>
-                        <li> <a href="">Munster</a></li>
-                        <li> <a href="">Leinster</a></li>
-                    </ul>
-                </nav>
+            input{
+                margin-left: 1em;
+                margin-bottom: .5em;
+                width: 300px;
+            }
 
-    <body>
+            input[type="checkbox"]{width: 15px;}
+            input[type="radio"]{width: 10px;}
 
-            <main id="mainText">       
+            #button, #reset{
+            margin-top: .5em;
+            width: 8em;
+            background-color: orange;
+            border: 2px solid black; 
+            }
+        </style>
+    <head>
+        <body>
+            <header>
+                <p>Any Queries or feedback please contact us</p>
+            </header>
+            <main>
+                <section>
+                    <h3>
+                        Plese enter the following information: (form action="http:/foo.com" method="get")
+                        <form action="http:/foo.com" method="put">
+                        <label for="first_name">First name:<span class="required">*</span></label>
+                        <input type="text" name="first_name" id="first_name" autofocus required><br>
+
+                        <label for="last_name">Last name:<span class="required">*</span></label>
+                        <input type="text" name="last_name" id="last_name" required><br>
+
+                        <label for="email">Email:<span class="required">*</span></label>
+                        <input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+                        
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" id="gender" value="male">Male
+                        <input type="radio" name="gender" id="gender" value="female">Female
+                        <input type="radio" name="gender" id="gender" value="other" checked>Other<br>
+                        <label for="internet">Heard of us:</label>
+                        <fieldset>
+                            <input type="checkbox" id="internet" name="internet" value="internet" checked> internet <br>
+                            <input type="checkbox" class="margin1" id="hear" name="paper" value="paper"> Newspaper<br>
+                            <input type="checkbox" class="margin1" id="hear" name="freind" value="freind"> Freind<br>
+                            <input type="checkbox" class="margin1" id="hear" name="Add" value="Add"> Others<br>
+                        </fieldset><br>
+                        <label for="message">Query  :   </label>
+                        <textarea cols="50" rows="6" id="message" name="message" placeholder="Your message must be less then 200 characters" data-maxlength="200"></textarea><br>
+                        <input type="submit" name="submit" id="button">
+                        <input type="reset" name="reset" id="reset">
+                        </form>
+                        <p style="margin-left: 138px;"><span class="required" >*</span><em>Indicates a required field</em></p>
+
+
+
+                    </h3>
+                </section>
             </main>
-            <aside>
-                <h2>Province Links</h2>
-                <ul>
-                    <li id="active"> <a href="Home.html">Home</a></li>
-                    <li> <a href="">Connought</a></li>
-                    <li> <a href="">Munster</a></li>
-                    <li> <a href="">Leinster</a></li>
-                </ul>
-            </aside>
-            <footer>
-                <ul>
-                    <li id="active"> <a href="Home.html">Home</a></li>
-                    <li> <a href="">Connought</a></li>
-                    <li> <a href="">Munster</a></li>
-                    <li> <a href="">Leinster</a></li>
-                </ul>
-                <p>&copy;Copyright &#64; Matthew O'Dowd 2022</p>
-            </footer>
-    </body>
- 
-
-
-
+        </body>
 
 </html>
